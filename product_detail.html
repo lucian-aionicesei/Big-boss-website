@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/productdetail.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header_bar">
+            <h1><a>Sustained.</a></h1>
+            <nav>
+                <ul class="header_nav">
+                    <li><a>Brands</a></li>
+                    <li><a>Seasons</a></li>
+                    <li><a>Discounts</a></li>
+                </ul>
+            </nav>
+            <img src="images/shopping_bag_white.svg" class="shopping_bag" alt="shopping cart icon">
+        </div>
+    </header>
+    <main>
+        <div class="side_menu">
+            <button type="button" class="collapsible">Gender</button>
+            <div class="content">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Men</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Women</label><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Unisex</label><br>
+            </div>
+            <button type="button" class="collapsible">Brands</button>
+            <div class="content">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Men</label><br>
+            </div>
+            <button type="button" class="collapsible">Year</button>
+            <div class="content">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Men</label><br>
+            </div>
+            <button type="button" class="collapsible">Price</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+            <button type="button" class="collapsible">Category</button>
+            <div class="content">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> Men</label><br>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="breadcrumbs_bar">
+                <p>Main/</p>
+                <h1>Nike</h1>
+            </div>
+            <div class="product_show">
+                <template id="smallProductTemplate">
+                    <article class="product">
+                        <img class="product_image" src="images/" alt="product image">
+                        <h3 class="product_name"></h3>
+                        <p class="product_description"></p>
+                        <p class="price"></p>
+                        <button class="add">Add to cart</button>
+                    </article>
+                </template>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="js/productdetail.js"></script>
+    </footer>
 </body>
+
 </html>
