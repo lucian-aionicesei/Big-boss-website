@@ -30,7 +30,7 @@ function showProduct(product) {
     //clone it
     const copy = template.cloneNode(true);
     //change content
-
+copy.querySelector("a").setAttribute("href", "product_detail.html?id=" + product.id);
 copy.querySelector("img.product_image").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 copy.querySelector(".product_name").textContent = product.productdisplayname;
 copy.querySelector(".price").textContent = `DKK ${product.price},-`;
