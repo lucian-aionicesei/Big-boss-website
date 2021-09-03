@@ -1,3 +1,7 @@
+:root {
+  --hover-over-color: cadetblue;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,7 +61,7 @@ header a {
 }
 
 li:hover {
-  background-color: cadetblue;
+  background-color: var(--hover-over-color);
   color: white;
 }
 
@@ -101,7 +105,7 @@ label {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .collapsible:hover {
-  background-color: cadetblue;
+  background-color: var(--hover-over-color);
   color: white;
 }
 
@@ -123,8 +127,11 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin: 10px;
-  border: solid black 1px;
+  /* border: solid black 1px; */
+  padding: 0.7rem;
+  background-color: rgb(246, 246, 246);
 }
 
 img {
@@ -132,18 +139,74 @@ img {
   height: auto;
 }
 
-  @media (max-width: 1465px) {
-    main {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      padding-top: 120px;
-    }
- }
+.burger_menu {
+  display: none
+}
 
- @media (max-width: 1880px) {
+@media only screen and (max-width: 940px) {
   main {
-    display: grid;
+    grid-template-columns: 1fr;
+    /* background-color: blue; */
+    margin: 0px 20px;
+  }
+
+  .shopping_bag {
+    width: 30px;
+    margin: 30px 10px;
+  }
+
+h1 {
+  text-align: center;
+  padding-left: 10px;
+  font-size: 40px;
+}
+
+.header_bar {
+  grid-template-columns: auto 1fr auto;
+  padding: 0;
+}
+
+  .burger_menu {
+    display: block;
+    width: 30px;
+    margin: 30px 10px;
+  }
+
+  header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+  .product_show {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+
+  .header_nav{
+    display: none;
+  }
+  .product {
+    width: 300px;
+
+  }
+
+  .side_menu {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 941px) and  (max-width: 1465px) {
+  main {
     grid-template-columns: 300px 1fr;
-    padding-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1466px) and (max-width: 2260px) {
+  main {
+    grid-template-columns: 300px 1fr;
   }
 }
