@@ -76,7 +76,7 @@ li:hover {
 
 .product {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   align-items: center;
   margin: 80px;
   padding: 50px;
@@ -94,4 +94,8 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 2rem
+}
+
+@media only screen and (max-width: 940px) {
+
 }
